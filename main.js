@@ -23,3 +23,7 @@ $(function(){
     }
 }
 window.onload = changeDisabled; // ページを表示したとき、changeDisabled() を呼び出す
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
