@@ -14,127 +14,202 @@
   </head>
   <body>
     <div class="container pt-4">
-      <p>
-        <span class="text-secondary">あなたが選んだのは<br /></span>
-        <span id="shaft-type-selected" class="font-weight-bold"></span>
-      </p>
-      <img src="https://placehold.jp/335x108.png" class="w-100" alt="" />
-      <div class="bat-name py-3">
-        <p class="font-weight-bold">ご使用予定バット名（メーカー名）</p>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <input
-              type="radio"
-              name="entry.907890283"
-              value="0"
-              id="bat-name"
-            /><label for="bat-name" class="custom-radio mb-1"></label>
-            <p style="display: inline">
-              <input type="text" name="input-bat-name" id="input-bat-name" disabled="disabled" placeholder="メーカー名" />
-            </p>
-          </li>
-          <li class="mt-2">
-            <input
-              type="radio"
-              name="entry.907890283"
-              value="1"
-              id="bat-other"
-            /><label for="bat-other" class="custom-radio"
-              >どこのメーカーか不明</label
-            >
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div class="py-3">
-        <p class="font-weight-bold mb-0">ジョイント形式の選択</p>
-        <div class="row">
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント1</p>
-            <input type="radio" name="entry.738301113" id="joint1" />
-            <label for="joint1" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント2</p>
-            <input type="radio" name="entry.738301113" id="joint2" />
-            <label for="joint2" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント3</p>
-            <input type="radio" name="entry.738301113" id="joint3" />
-            <label for="joint3" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント4</p>
-            <input type="radio" name="entry.738301113" id="joint4" />
-            <label for="joint4" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント5</p>
-            <input type="radio" name="entry.738301113" id="joint5" />
-            <label for="joint5" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント6</p>
-            <input type="radio" name="entry.738301113" id="joint6" />
-            <label for="joint6" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント7</p>
-            <input type="radio" name="entry.738301113" id="joint7" />
-            <label for="joint7" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">ジョイント8</p>
-            <input type="radio" name="entry.738301113" id="joint8" />
-            <label for="joint8" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-4 mt-4 text-center">
-            <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
-            <p class="text-center mb-2">不明</p>
-            <input type="radio" name="entry.738301113" id="joint9" />
-            <label for="joint9" class="custom-radio width-fixed px-0"></label>
-          </div>
-          <div class="col-12 mt-4">
-            <p class="mb-2">
-              上記以外のジョイントを使用している方は下記に直接入力にてお知らせください
-            </p>
-            <input
-              type="radio"
-              name="joint-type"
-              id="joint-other"
-              onClick="changeDisabled()"
-            /><label for="joint-other" class="custom-radio mb-1"></label>
-            <p style="display: inline">
-              <input type="text" name="inputNumber" placeholder="メーカー名" />
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="py-3">
-        <p class="font-weight-bold">パイロテッドの有無
-          <button type="button" class="btn btn-warning rounded-circle p-0 ml-2" style="width: 18px; height: 18px; font-size: 12px;" data-toggle="tooltip" data-placement="right" title="説明文が入ります">?</button>
+      <form method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtbrctSRZwtXlP5qOf7YxXg8mXHpry8a9xPnjGCnYOA65-xA/formResponse"
+      >
+        <p>
+          <span class="text-secondary">あなたが選んだのは<br /></span>
+          <span id="shaft-type-selected" class="font-weight-bold"></span>
         </p>
-        <div class="row no-gutters">
-          <div class="col-6">
-            <input type="radio" name="entry.980371206" id="yes" class="pilot" />
-            <label for="yes" class="w-100 text-center border py-3">あり</label>
-          </div>
-          <div class="col-6">
-            <input type="radio" name="entry.980371206" id="no" class="pilot" />
-            <label for="no" class="w-100 text-center border py-3">なし</label>
+        <img src="https://placehold.jp/335x108.png" class="w-100" alt="" />
+        <div class="bat-name py-3">
+          <p class="font-weight-bold">ご使用予定バット名（メーカー名）</p>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <input
+                type="radio"
+                name="entry.907890283"
+                value="0"
+                id="bat-name"
+              /><label for="bat-name" class="custom-radio mb-1"></label>
+              <p style="display: inline">
+                <input
+                  type="text"
+                  name="input-bat-name"
+                  id="input-bat-name"
+                  disabled="disabled"
+                  placeholder="メーカー名"
+                />
+              </p>
+            </li>
+            <li class="mt-2">
+              <input
+                type="radio"
+                name="entry.907890283"
+                value="1"
+                id="bat-other"
+              /><label for="bat-other" class="custom-radio"
+                >どこのメーカーか不明</label
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="py-3">
+          <p class="font-weight-bold mb-0">ジョイント形式の選択</p>
+          <div class="row">
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント1</p>
+              <input type="radio" name="entry.738301113" id="joint1" />
+              <label for="joint1" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント2</p>
+              <input type="radio" name="entry.738301113" id="joint2" />
+              <label for="joint2" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント3</p>
+              <input type="radio" name="entry.738301113" id="joint3" />
+              <label for="joint3" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント4</p>
+              <input type="radio" name="entry.738301113" id="joint4" />
+              <label for="joint4" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント5</p>
+              <input type="radio" name="entry.738301113" id="joint5" />
+              <label for="joint5" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント6</p>
+              <input type="radio" name="entry.738301113" id="joint6" />
+              <label for="joint6" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント7</p>
+              <input type="radio" name="entry.738301113" id="joint7" />
+              <label for="joint7" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">ジョイント8</p>
+              <input type="radio" name="entry.738301113" id="joint8" />
+              <label for="joint8" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-4 mt-4 text-center">
+              <img
+                src="https://placehold.jp/100x100.png"
+                class="w-100"
+                alt=""
+              />
+              <p class="text-center mb-2">不明</p>
+              <input type="radio" name="entry.738301113" id="joint9" />
+              <label for="joint9" class="custom-radio width-fixed px-0"></label>
+            </div>
+            <div class="col-12 mt-4">
+              <p class="mb-2">
+                上記以外のジョイントを使用している方は下記に直接入力にてお知らせください
+              </p>
+              <input
+                type="radio"
+                name="entry.738301113"
+                id="joint-other"
+                onClick="changeDisabled()"
+              /><label for="joint-other" class="custom-radio mb-1"></label>
+              <p style="display: inline">
+                <input
+                  type="text"
+                  name="inputNumber"
+                  placeholder="メーカー名"
+                />
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+        <hr />
+        <div class="py-3">
+          <p class="font-weight-bold">
+            パイロテッドの有無
+            <button
+              type="button"
+              class="btn btn-warning rounded-circle p-0 ml-2"
+              style="width: 18px; height: 18px; font-size: 12px"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="説明文が入ります"
+            >
+              ?
+            </button>
+          </p>
+          <div class="row no-gutters">
+            <div class="col-6">
+              <input
+                type="radio"
+                name="entry.980371206"
+                id="yes"
+                class="pilot"
+              />
+              <label for="yes" class="w-100 text-center border py-3"
+                >あり</label
+              >
+            </div>
+            <div class="col-6">
+              <input
+                type="radio"
+                name="entry.980371206"
+                id="no"
+                class="pilot"
+              />
+              <label for="no" class="w-100 text-center border py-3">なし</label>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <a href="./form-step3.html" class="btn btn-secondary">次へ</a>
+        </div>
+      </form>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
