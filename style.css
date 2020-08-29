@@ -1,0 +1,11 @@
+body {
+    font-size: 14px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+/* input[type=radio]:checked + label {
+    background: red;
+} */
