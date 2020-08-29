@@ -15,15 +15,21 @@ $(function(){
     $("#shaft-type-selected").text(d);
   })
 
-  function changeDisabled() {
-    if ( document.Form1["number"][1].checked ) { // 「その他」のラジオボタンをクリックしたとき
-        document . Form1["inputNumber"] . disabled = false; // 「その他」のラジオボタンの横のテキスト入力欄を有効化
-    } else { // 「その他」のラジオボタン以外をクリックしたとき
-        document . Form1["inputNumber"] . disabled = true; // 「その他」のラジオボタンの横のテキスト入力欄を無効化
-    }
-}
-window.onload = changeDisabled; // ページを表示したとき、changeDisabled() を呼び出す
 
+// ラジオボタンを選択後、テキスト入力可
+$(function() {
+  $("[name='bat-name']").click(function(){
+      var num = $(this).val();
+      console.log(num);
+      if ( num == 0 ){
+          $("#input-bat-name").removeAttr("disabled");
+      } else {
+          $("#input-bat-name").attr("disabled", "disabled");
+      }
+  });
+});
+
+// tooltip
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

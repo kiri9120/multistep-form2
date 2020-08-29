@@ -6,6 +6,10 @@ input[type="radio"] {
   display: none;
 }
 
+label {
+    cursor: pointer;
+}
+
 .custom-radio {
   position: relative;
   padding: 0 0 0 30px;
