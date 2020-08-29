@@ -14,11 +14,110 @@
   </head>
   <body>
     <div class="container pt-4">
-        <p>
-            <span class="text-secondary">あなたが選んだのは<br></span>
-            <span id="shaft-type-selected" class="font-weight-bold"></span>
-        </p>
-        <p>コンテンツが入ります。コンテンツが入ります。コンテンツが入ります。</p>
+      <p>
+        <span class="text-secondary">あなたが選んだのは<br /></span>
+        <span id="shaft-type-selected" class="font-weight-bold"></span>
+      </p>
+      <img src="" alt="" />
+      <div class="bat-name">
+        <p class="font-weight-bold">ご使用予定バット名（メーカー名）</p>
+        <ul class="list-unstyled">
+          <li>
+            <input
+              type="radio"
+              name="number"
+              value="2台"
+              id="radio-2"
+              onClick="changeDisabled()"
+            /><label for="radio-2" class="custom-radio mb-1"></label>
+            <p style="display: inline">
+              <input type="text" name="inputNumber" placeholder="メーカー名" />
+            </p>
+          </li>
+          <li class="mt-2">
+            <input
+              type="radio"
+              name="number"
+              value="その他"
+              id="radio-other"
+              onClick="changeDisabled()"
+            /><label for="radio-other" class="custom-radio"
+              >どこのメーカーか不明</label
+            >
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <p class="font-weight-bold">ジョイント形式の選択</p>
+      <div class="row">
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint1" />
+          <label for="joint1" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint2" />
+          <label for="joint2" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint3" />
+          <label for="joint3" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint4" />
+          <label for="joint4" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint5" />
+          <label for="joint5" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint6" />
+          <label for="joint6" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint7" />
+          <label for="joint7" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint8" />
+          <label for="joint8" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-4 mt-4 text-center">
+          <img src="https://placehold.jp/100x100.png" class="w-100" alt="" />
+          <p class="text-center mb-2">SA</p>
+          <input type="radio" name="joint-type" id="joint9" />
+          <label for="joint9" class="custom-radio width-fixed px-0"></label>
+        </div>
+        <div class="col-12 mt-4">
+          <p class="mb-2">上記以外のジョイントを使用している方は下記に直接入力にてお知らせください</p>
+          <input
+            type="radio"
+            name="joint-type"
+            value="2台"
+            id="joint-other"
+            onClick="changeDisabled()"
+          /><label for="joint-other" class="custom-radio mb-1"></label>
+          <p style="display: inline">
+            <input type="text" name="inputNumber" placeholder="メーカー名" />
+          </p>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

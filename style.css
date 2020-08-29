@@ -1,11 +1,46 @@
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-input[type=radio] {
-    display: none;
+input[type="radio"] {
+  display: none;
 }
 
-/* input[type=radio]:checked + label {
-    background: red;
-} */
+.custom-radio {
+  position: relative; /* ボックスの位置を指定する */
+  padding: 0 0 0 30px; /* ボックス内側の余白を指定する */
+}
+.custom-radio:after,
+.custom-radio:before {
+  position: absolute; /* ボックスの位置を指定する */
+  content: ""; /* ボックスのコンテンツ */
+  display: block; /* ブロックレベル要素化する */
+  top: 50%; /* 上部から配置の基準位置を決める */
+}
+.custom-radio:after {
+  left: 0; /* 左から配置の基準位置を決める */
+  margin-top: -10px; /* チェック枠の位置 */
+  width: 18px; /* ボックスの横幅を指定する */
+  height: 18px; /* ボックスの高さを指定する */
+  border: 2px solid #f20d1e; /* ボックスの境界線を実線で指定する */
+  border-radius: 50%; /* ボックスの角丸を指定する */
+}
+.custom-radio:before {
+  left: 4px; /* 左から配置の基準位置を決める */
+  margin-top: -6px; /* チェックマークの位置 */
+  width: 10px; /* ボックスの横幅を指定する */
+  height: 10px; /* ボックスの高さを指定する */
+  background: #f20d1e; /* ボックスの背景色を指定する */
+  border-radius: 50%; /* ボックスの角丸を指定する */
+  opacity: 0; /* 要素を透過指定する */
+}
+input[type="radio"]:checked + .custom-radio:before {
+  opacity: 1; /* 要素を表示する */
+}
+.custom-radio:hover:after {
+  border-color: #f20d1e; /* ボックスの境界線を実線で指定する */
+}
+
+.custom-radio.width-fixed {
+    width: 18px;
+}
